@@ -1,0 +1,180 @@
+.event {
+    color: var(--clr-third);
+    text-shadow: 1px 1px 3px var(--clr-shadow);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-2xl);
+
+    position: relative;
+}
+
+.event__detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: var(--size-3xl) var(--size-2xl);
+
+    background-color: rgba(255, 255, 255, .3);
+
+    text-align: center;
+    border-radius: 10px;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+
+    position: relative;
+    z-index: 2;
+}
+
+.event__title {
+    font-family: "Dancing Script", cursive;
+    font-size: var(--size-2xl);
+    text-shadow: 1px 0px 0px var(--clr-primary);
+}
+
+.event__date,
+.event__location {
+    font-size: var(--size-base);
+    font-weight: 500;
+}
+
+.event__hour,
+.event__location-street {
+    font-size: var(--size-sm);
+    margin-bottom: var(--size-sm);
+    color: var(--clr-secondary);
+}
+
+.event__btn-location {
+    background-color: var(--clr-highlight);
+    box-shadow: 1px 1px 3px 3px rgba(255, 255, 255, .3);
+    padding: 3px 5px;
+
+    font-size: var(--size-base);
+    font-weight: normal;
+
+    color: var(--clr-secondary);
+    text-decoration: none;
+}
+
+.event__btn-location:hover {
+    background-color: var(--clr-secondary);
+    color: var(--clr-highlight);
+}
+
+
+/* xs */
+@media (min-width : 475px) {
+    .event__detail-container {
+        padding: var(--size-3xl) var(--size-2xl);
+    }
+
+    .event__title {
+        font-size: var(--size-3xl);
+    }
+
+    .event__date,
+    .event__location {
+        font-size: var(--size-lg);
+    }
+
+    .event__hour,
+    .event__location-street {
+        font-size: var(--size-base);
+        margin-bottom: var(--size-base);
+    }
+
+    .event__btn-location {
+        padding: 4px 6px;
+        font-size: var(--size-lg);
+    }
+}
+
+/* sm */
+@media (min-width : 640px) {
+    .event__detail-container {
+        padding: var(--size-4xl) var(--size-2xl);
+    }
+
+    .event__title {
+        font-size: var(--size-4xl);
+    }
+
+    .event__date,
+    .event__location {
+        font-size: var(--size-xl);
+    }
+
+    .event__hour,
+    .event__location-street {
+        font-size: var(--size-lg);
+        margin-bottom: var(--size-lg);
+    }
+
+    .event__btn-location {
+        padding: 5px 8px;
+        font-size: var(--size-xl);
+    }
+}
+
+/* md */
+@media (min-width : 768px) {
+    .event__detail-container {
+        padding: var(--size-5xl) var(--size-3xl);
+    }
+
+    .event__title {
+        font-size: var(--size-5xl);
+    }
+
+    .event__date,
+    .event__location {
+        font-size: var(--size-2xl);
+    }
+
+    .event__hour,
+    .event__location-street {
+        font-size: var(--size-xl);
+        margin-bottom: var(--size-xl);
+    }
+
+    .event__btn-location {
+        padding: 6px 10px;
+        font-size: var(--size-3xl);
+    }
+}
+
+/* lg */
+@media (min-width : 1024px) {
+    .event__detail-container {
+        padding: var(--size-3xl) var(--size-2xl);
+    }
+
+    .event__title {
+        font-size: var(--size-3xl);
+    }
+
+    .event__date,
+    .event__location {
+        font-size: var(--size-lg);
+    }
+
+    .event__hour,
+    .event__location-street {
+        font-size: var(--size-base);
+        margin-bottom: var(--size-base);
+    }
+
+    .event__btn-location {
+        padding: 4px 6px;
+        font-size: var(--size-lg);
+    }
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */
+
+/* 2xl */
+/* @media (min-width : 1536px) {} */

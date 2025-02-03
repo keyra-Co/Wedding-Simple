@@ -1,0 +1,54 @@
+.audio-container {
+    position: fixed;
+    bottom: var(--size-xxs);
+    right: var(--size-xxs);
+    width: var(--size-4xl);
+    width: var(--size-4xl);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 3px 1px rgba(250, 243, 224, .5);
+    border-radius: 50%;
+    z-index: 100;
+}
+
+/* xs */
+@media (min-width : 475px) {
+    .audio-container {
+        bottom: var(--size-xs);
+        right: var(--size-xs);
+        width: var(--size-5xl);
+        width: var(--size-5xl);
+    }
+}
+
+/* sm */
+@media (min-width : 640px) {
+    .audio-container {
+        bottom: var(--size-sm);
+        right: var(--size-sm);
+        width: var(--size-6xl);
+        width: var(--size-6xl);
+    }
+}
+
+/* md */
+@media (min-width : 768px) {
+    .audio-container {
+        bottom: var(--size-base);
+        right: var(--size-base);
+        width: var(--size-7xl);
+        width: var(--size-7xl);
+    }
+}
+
+/* lg */
+@media (min-width : 1024px) {
+    .audio-container {
+        bottom: var(--size-sm);
+        left: var(--size-sm);
+        width: var(--size-5xl);
+        width: var(--size-5xl);
+    }
+}

@@ -1,0 +1,277 @@
+/* Mouse Animation Scroll Down */
+@keyframes scrollDown {
+    0% {
+        opacity: 0;
+    }
+
+    10%,
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0, 100%);
+    }
+}
+
+/* Animation svg */
+.anima.show path {
+    fill: transparent;
+    stroke-width: 1;
+    stroke: var(--clr-secondary);
+    stroke-dasharray: var(--anima);
+    stroke-dashoffset: var(--anima);
+}
+
+
+.anima.show path {
+    animation: textAnimation 2s 1s ease-in-out forwards;
+}
+
+@keyframes textAnimation {
+    0% {
+        stroke-dashoffset: var(--anima);
+    }
+
+    90% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: var(--clr-secondary);
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Shrink Animation */
+.shrink {
+    animation: shrink ease-in forwards;
+}
+
+@keyframes shrink {
+    from {
+        opacity: 0;
+        transform: scale(0);
+        filter: blur(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0px);
+    }
+}
+
+/* AppearUpScroll Animation */
+.appearUpScroll {
+    animation: appearUpScroll both;
+}
+
+@keyframes appearUpScroll {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* AppearUpImgScroll Animation */
+.appearUpImgScroll {
+    animation: appearUpImgScroll both;
+}
+
+@keyframes appearUpImgScroll {
+    from {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* appearDownScroll Animation */
+.appearDownScroll {
+    animation: appearDownScroll both;
+}
+
+@keyframes appearDownScroll {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* growScroll */
+.growScroll {
+    animation: growScroll both;
+}
+
+@keyframes growScroll {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animation Duration */
+.fast {
+    animation-duration: .5s;
+}
+
+.normal {
+    animation-duration: 1s;
+}
+
+.slow {
+    animation-duration: 1.5s;
+}
+
+/* Animation Delay */
+.delay-fast {
+    animation-delay: .5s;
+}
+
+.delay-normal {
+    animation-delay: 1s;
+}
+
+.delay-slow {
+    animation-delay: 1.5s;
+}
+
+/* Animaton Timeline View */
+.timeline-superfast {
+    animation-timeline: view(90% 5%);
+}
+
+.timeline-veryfast {
+    animation-timeline: view(85% 5%);
+}
+
+.timeline-fast {
+    animation-timeline: view(80% 5%);
+}
+
+.timeline-normal {
+    animation-timeline: view(75% 5%);
+}
+
+.timeline-slow {
+    animation-timeline: view(65% 5%);
+}
+
+.timeline-veryslow {
+    animation-timeline: view(60% 5%);
+}
+
+/* Auto Animation Observer */
+/* Hide Up */
+.hiddenUp {
+    opacity: 0;
+    transform: translateY(80%);
+    transition: all 1s ease-in;
+}
+
+.hiddenUp.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Hide Down */
+.hiddenDown {
+    opacity: 0;
+    transform: translateY(-80%);
+    transition: all 1s ease-out;
+}
+
+.hiddenDown.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Hide Shrink */
+.hiddenScale {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+}
+
+.hiddenScale.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Hidden Down Svg */
+.hiddenDownSvg {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 1s ease-in-out;
+}
+
+.hiddenDownSvg.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay.show {
+    transition-delay: .3s;
+}
+
+
+/* Music Icon */
+.rotate {
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Hide Header */
+.header.hide {
+    animation: hide 1s ease-out forwards;
+}
+
+@keyframes hide {
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+/* Modal animation */
+/* Tambahkan animasi pada modal-image */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

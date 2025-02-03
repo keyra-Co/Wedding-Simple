@@ -1,0 +1,107 @@
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    color: var(--clr-secondary);
+}
+
+.opening__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-lg);
+
+    text-align: center;
+    z-index: 1;
+}
+
+.opening__container svg {
+    margin-bottom: -1rem;
+}
+
+.opening__paragraph {
+    font-size: var(--size-sm);
+    text-shadow: 0px 0px 3px var(--clr-shadow);
+}
+
+.opening__surah {
+    font-size: var(--size-xl);
+    font-family: "Dancing Script", cursive;
+    text-shadow: 0px 0px 3px var(--clr-shadow);
+    font-weight: bold;
+
+    margin: var(--size-xl) 0;
+}
+
+
+/* xs */
+@media (min-width : 475px) {
+    .opening__paragraph {
+        font-size: var(--size-base);
+    }
+
+    .opening__surah {
+        font-size: var(--size-2xl);
+    }
+
+}
+
+/* sm */
+@media (min-width : 640px) {
+    .opening__container {
+        gap: var(--size-xl);
+        padding: var(--size-3xl) var(--size-4xl) var(--size-6xl);
+    }
+
+    .opening__paragraph {
+        font-size: var(--size-lg);
+    }
+
+    .opening__surah {
+        font-size: var(--size-3xl);
+    }
+
+}
+
+/* md */
+@media (min-width : 768px) {
+    .opening__container {
+        gap: var(--size-2xl);
+        padding: var(--size-4xl) var(--size-5xl) var(--size-7xl);
+    }
+
+    .opening__paragraph {
+        font-size: var(--size-xl);
+    }
+
+    .opening__surah {
+        font-size: var(--size-4xl);
+    }
+
+}
+
+/* lg */
+@media (min-width : 1024px) {
+    .opening__container {
+        gap: var(--size-lg);
+        padding: var(--size-3xl) var(--size-7xl) var(--size-5xl);
+    }
+
+    .opening__paragraph {
+        font-size: var(--size-base);
+    }
+
+    .opening__surah {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */
+
+/* 2xl */
+/* @media (min-width : 1536px) {} */

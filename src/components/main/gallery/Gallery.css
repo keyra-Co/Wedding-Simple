@@ -1,0 +1,243 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-xl);
+    justify-content: center;
+    align-items: center;
+
+    color: var(--clr-secondary);
+    position: relative;
+}
+
+.gallery__title {
+    font-size: var(--size-2xl);
+    font-family: "Dancing Script", cursive;
+    text-shadow: 1px 1px 3px var(--clr-shadow);
+}
+
+.gallery__container {
+    columns: 120px;
+}
+
+.gallery__item {
+    margin-bottom: var(--size-xxs);
+    background-color: var(--clr-primary);
+    padding: 3px;
+}
+
+.gallery__item:hover img {
+    filter: grayscale(.7);
+    cursor: pointer;
+}
+
+.gallery__item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: filter .5s ease-in;
+}
+
+.gallery__slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: var(--clr-shadow);
+    display: flex;
+    justify-content: center;
+    animation: fadeIn .3s ease-in;
+    align-items: center;
+}
+
+.btn-next,
+.btn-prev,
+.btn-close {
+    position: absolute;
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+}
+
+.btn-next:hover,
+.btn-prev:hover,
+.btn-close:hover {
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
+}
+
+.btn-next {
+    right: var(--size-xl);
+}
+
+.btn-prev {
+    left: var(--size-xl);
+}
+
+.btn-prev,
+.btn-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--size-3xl);
+    height: var(--size-3xl);
+    font-size: var(--size-2xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.btn-close {
+    right: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    padding: 3px 10px;
+    font-size: var(--size-lg);
+}
+
+.gallery__slider-img {
+    margin: auto;
+    border: 3px solid var(--clr-primary);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallery__slider-img-container {
+    position: relative;
+    z-index: -1;
+    aspect-ratio: 3/2;
+    width: 80%;
+}
+
+/* xs */
+@media (min-width : 475px) {
+    .gallery {
+        gap: var(--size-xl);
+    }
+
+    .gallery__title {
+        font-size: var(--size-3xl);
+    }
+
+    .gallery__container {
+        columns: 200px;
+    }
+
+    .gallery__slider-img-container {
+        width: 70%;
+    }
+
+    .btn-prev,
+    .btn-next {
+        width: var(--size-4xl);
+        height: var(--size-4xl);
+        font-size: var(--size-3xl);
+    }
+
+    .btn-close {
+        font-size: var(--size-xl);
+        padding: 5px 10px;
+    }
+}
+
+/* sm */
+@media (min-width : 640px) {
+    .gallery {
+        gap: var(--size-2xl);
+    }
+
+    .gallery__title {
+        font-size: var(--size-4xl);
+    }
+
+    .gallery__container {
+        columns: 250px;
+    }
+
+    .gallery__slider-img-container {
+        width: 60%;
+    }
+
+    .btn-prev,
+    .btn-next {
+        width: var(--size-5xl);
+        height: var(--size-5xl);
+        font-size: var(--size-4xl);
+    }
+
+    .btn-close {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* md */
+@media (min-width : 768px) {
+    .gallery {
+        gap: var(--size-3xl);
+    }
+
+    .gallery__title {
+        font-size: var(--size-5xl);
+    }
+
+    .gallery__container {
+        columns: 280px;
+    }
+
+    .gallery__slider-img-container {
+        width: 50%;
+    }
+
+    .btn-prev,
+    .btn-next {
+        width: var(--size-6xl);
+        height: var(--size-6xl);
+        font-size: var(--size-5xl);
+    }
+
+    .btn-close {
+        font-size: var(--size-3xl);
+    }
+
+}
+
+/* lg */
+@media (min-width : 1024px) {
+    .gallery {
+        gap: var(--size-xl);
+    }
+
+    .gallery__title {
+        font-size: var(--size-3xl);
+    }
+
+    .gallery__container {
+        columns: 200px;
+    }
+
+    .gallery__slider-img-container {
+        width: 60%;
+    }
+
+    .btn-prev,
+    .btn-next {
+        width: var(--size-5xl);
+        height: var(--size-5xl);
+        font-size: var(--size-4xl);
+    }
+
+    .btn-close {
+        font-size: var(--size-2xl);
+    }
+
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */
+
+/* 2xl */
+/* @media (min-width : 1536px) {} */

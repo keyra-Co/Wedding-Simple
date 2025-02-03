@@ -1,0 +1,145 @@
+/* xs */
+/* @media (min-width : 475px) {} */
+
+/* sm */
+/* @media (min-width : 640px) {} */
+
+/* md */
+/* @media (min-width : 768px) {} */
+
+/* lg */
+/* @media (min-width : 1024px) {} */
+
+/* xl */
+/* @media (min-width : 1280px) {} */
+
+/* 2xl */
+/* @media (min-width : 1536px) {} */
+
+
+/* Heading Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* "Playfair Display", system-ui; */
+
+/* Sub-heading Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/* "Dancing Script", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Niconne&family=Oleo+Script:wght@400;700&display=swap');
+/* "Cormorant Garamond", serif; */
+
+/* Decorations Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap');
+/* "Great Vibes", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bungee&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Niconne&family=Oleo+Script:wght@400;700&family=Pacifico&display=swap');
+/* "Allura", cursive; */
+
+/* Body Text Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Niconne&family=Oleo+Script:wght@400;700&display=swap');
+/* "Crimson Pro", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+/* "Lato", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bungee&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Delius+Swash+Caps&family=Meow+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Niconne&family=Oleo+Script:wght@400;700&family=Pacifico&display=swap');
+/* "Delius Swash Caps", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* "Poppins", serif; */
+
+.anima {
+    width: var(--size-7xl);
+    height: var(--size-7xl);
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.section {
+    padding: var(--size-4xl) var(--size-xl);
+    border-bottom: var(--size-sm) solid var(--clr-third);
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-highlight);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    margin: 0 auto;
+    border-radius: 5px;
+
+    transition: all .3s ease-in;
+}
+
+/* xs */
+@media (min-width : 475px) {
+    .section {
+        padding: var(--size-5xl) var(--size-3xl);
+    }
+
+    .anima {
+        width: var(--size-8xl);
+        height: var(--size-8xl);
+    }
+}
+
+/* sm */
+@media (min-width : 640px) {
+    .section {
+        padding: var(--size-6xl) var(--size-4xl);
+    }
+
+    .anima {
+        width: var(--size-9xl);
+        height: var(--size-9xl);
+    }
+}
+
+/* md */
+@media (min-width : 768px) {
+    .section {
+        padding: var(--size-7xl) var(--size-10xl);
+    }
+
+    .anima {
+        width: var(--size-10xl);
+        height: var(--size-10xl);
+    }
+}
+
+/* lg */
+@media (min-width : 1024px) {
+    .section {
+        padding: var(--size-6xl) var(--size-3xl);
+    }
+
+    .main,
+    .footer {
+        max-width: 500px;
+        margin-left: auto;
+    }
+
+    .anima {
+        width: var(--size-8xl);
+        height: var(--size-8xl);
+    }
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */
+
+/* 2xl */
+/* @media (min-width : 1536px) {} */

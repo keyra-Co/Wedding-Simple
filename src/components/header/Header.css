@@ -1,0 +1,135 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+
+    color: var(--clr-secondary);
+    text-transform: capitalize;
+    text-shadow: 0px 0px 5px var(--clr-shadow);
+
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bg-header {
+    filter: blur(.1px) brightness(.6);
+}
+
+.header__greet {
+    font-size: var(--size-lg);
+}
+
+.header__guest {
+    font-size: var(--size-3xl);
+    font-family: 'Cormorant Garamond';
+}
+
+.header__title {
+    font-size: var(--size-4xl);
+    font-family: "Playfair Display", system-ui;
+
+    margin: -5px 0 var(--size-base);
+}
+
+.header__btn-invite {
+    display: flex;
+    gap: 5px;
+
+    padding: 3px 12px;
+    position: relative;
+    background-color: var(--clr-highlight);
+
+    font-size: var(--size-lg);
+    color: var(--clr-third);
+    text-shadow: 0px 0px 3px var(--clr-shadow);
+}
+
+.header__btn-invite:hover {
+    background-color: var(--clr-secondary);
+    color: var(--clr-highlight);
+    text-shadow: 0px 0px 3px var(--clr-highlight);
+}
+
+.header__btn-invite:hover::before {
+    border-color: var(--clr-primary);
+}
+
+.header__btn-invite::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+
+    width: 110%;
+    height: 130%;
+    border-radius: 10px;
+    border: 1.5px solid var(--clr-third);
+
+    animation: borderAnimate .7s infinite alternate-reverse;
+}
+
+@keyframes borderAnimate {
+    to {
+        width: 100%;
+        border-radius: 5px;
+        height: 100%;
+    }
+}
+
+/* xs */
+@media (min-width : 475px) {
+
+    .header__greet {
+        font-size: var(--size-xl);
+    }
+
+    .header__guest {
+        font-size: var(--size-4xl);
+    }
+
+    .header__title {
+        font-size: var(--size-5xl);
+    }
+}
+
+/* sm */
+/* @media (min-width : 640px) {} */
+
+/* md */
+@media (min-width : 768px) {
+    .header__greet {
+        font-size: var(--size-2xl);
+    }
+
+    .header__guest {
+        font-size: var(--size-4xl);
+    }
+
+    .header__title {
+        font-size: var(--size-6xl);
+        margin-bottom: var(--size-2xl);
+    }
+
+    .header__btn-invite {
+        font-size: var(--size-xl);
+        padding: 3px 36px;
+    }
+}
+
+/* lg */
+@media (min-width : 1024px) {
+    .header__btn-invite {
+        font-size: var(--size-2xl);
+        padding: 3px var(--size-7xl);
+    }
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */
+
+/* 2xl */
+/* @media (min-width : 1536px) {} */
