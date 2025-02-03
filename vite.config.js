@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
-    base: mode === 'production' ? '/wedding-web-simple/' : '/', // gunakan base path hanya saat production
+    base: mode === 'production' ? '/Wedding-Simple/' : '/', // gunakan base path hanya saat production
   };
 });

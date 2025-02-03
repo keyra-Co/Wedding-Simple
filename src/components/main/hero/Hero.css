@@ -1,6 +1,5 @@
 .hero {
-    /* background-image: url('/Wedding_Rustic/images/couple3Hero.jpg'); */
-    background-image: url('images/hero.jpg');
+    background-image: url('/Wedding-Simple/images/hero.jpg');
     background-size: cover;
     background-position: center;
 
@@ -64,8 +63,7 @@
 @media (min-width : 640px) {
 
     .hero {
-        /* background-image: url('/Wedding_Rustic/images/couple3.jpg'); */
-        background-image: url('images/hero.jpg');
+        background-image: url('/Wedding-Simple/images/hero.jpg');
     }
 
     .hero__title {
