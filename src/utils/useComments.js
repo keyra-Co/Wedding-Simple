@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 // URL APi
-const API_URL = 'http://localhost:5000/api/comments';
+const API_URL = 'https://wedding-comments-pho6h3diz-keyra-cos-projects.vercel.app/api/comments';
 
 const useComments = () => {
   const [comments, setComments] = useState([]);
