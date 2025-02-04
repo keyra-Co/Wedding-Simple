@@ -21,7 +21,7 @@ export default function Event() {
     <section className="section event">
       <OrnamensTop />
       {/* <Background background={background} /> */}
-      <EventDetail title={'Akad Nikah'} hour={'10.00 WIB'} setRef={setRef}>
+      <EventDetail street={''} location={'14 Februari 2025'} title={'Akad Nikah'} hour={'10.00 WIB'} setRef={setRef}>
         <svg
           className="anima hiddenDownSvg"
           ref={setRef}
@@ -70,7 +70,14 @@ S410.168,408,344,408z"
           </g>
         </svg>
       </EventDetail>
-      <EventDetail buttonDefault={false} title={'Resepsi'} hour={'11.00 WIB - Selesai'} setRef={setRef}>
+      <EventDetail
+        location={'Aula Kantor RW 07'}
+        street={'JL Matraman Dalam 3, Pegangsaan, Kec. Menteng, Kota Jakarta Pusat'}
+        buttonDefault={false}
+        title={'Resepsi'}
+        hour={'11.00 WIB - Selesai'}
+        setRef={setRef}
+      >
         <svg
           className="anima hiddenDownSvg"
           ref={setRef}
@@ -101,7 +108,7 @@ S410.168,408,344,408z"
   );
 }
 
-function EventDetail({ children, date, title, hour, setRef }) {
+function EventDetail({ children, date, title, hour, setRef, location, street }) {
   return (
     <div className="event__detail-container">
       {children}
@@ -111,10 +118,10 @@ function EventDetail({ children, date, title, hour, setRef }) {
       <h3 className="event__date appearUpScroll timeline-veryslow">{date}</h3>
       <p className="event__hour appearUpScroll timeline-veryslow">{hour}</p>
       <h3 ref={setRef} className="event__location hiddenUp">
-        Aula Kantor RW 07
+        {location}
       </h3>
       <p ref={setRef} className="event__location-street hiddenDown">
-        JL Matraman Dalam 3, Pegangsaan, Kec. Menteng, Kota Jakarta Pusat
+        {street}
       </p>
       <BtnLocation />
     </div>
