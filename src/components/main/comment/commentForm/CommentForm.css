@@ -29,7 +29,7 @@
 }
 
 .comment-form__info-item span {
-    font-size: var(--size-xxs);
+    font-size: var(--size-xs);
 }
 
 .comment-form__info-item.hadir {
