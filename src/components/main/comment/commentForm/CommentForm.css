@@ -23,8 +23,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: var(--size-7xl);
-    height: var(--size-7xl);
+    width: var(--size-8xl);
+    height: var(--size-8xl);
     font-size: var(--size-base);
 }
 
