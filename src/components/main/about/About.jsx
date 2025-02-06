@@ -36,13 +36,13 @@ function AboutCoupleContainer() {
     <div className="about__couple-container">
       <AboutOpening setRef={setRef} />
       <AboutCouple name={'Lilianna Majid'} father={'Majid'} mother={'Hanih Minarnih'} pronoun={'Putri'}>
-        <ImageFrame image={'image(1).jpg'} />
+        <ImageFrame image={'bride.jpeg'} />
       </AboutCouple>
       <span ref={setRef} className="about__ampersand hiddenUp">
         &
       </span>
       <AboutCouple name={'Mikail Dharmawan'} father={'Achmad Buchori Tugiyanto (Alm)'} mother={'Endang Prapti Asih Utami (Almh)'} pronoun={'Putra'}>
-        <ImageFrame image={'image(9).jpg'} />
+        <ImageFrame image={'groom.jpeg'} />
       </AboutCouple>
     </div>
   );
