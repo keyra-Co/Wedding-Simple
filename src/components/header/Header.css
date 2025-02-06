@@ -17,7 +17,10 @@
 }
 
 .bg-header {
-    filter: blur(.1px) brightness(.6);
+    filter: blur(.1px) brightness(.6) grayscale(.5);
+    position: relative;
+    object-position: top;
+    object-fit: cover;
 }
 
 .header__greet {

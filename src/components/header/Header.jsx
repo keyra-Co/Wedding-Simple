@@ -15,7 +15,7 @@ export default function Header({ isOpen, onOpen, onPlay, name }) {
 
   return (
     <header className={`header ${isOpen ? 'hide' : ''}`}>
-      <Background background={'images/opening.jpg'} init={'bg-header'} />
+      <Background background={'images/hero.jpeg'} init={'bg-header'} />
       <HeaderContent text={'Dear,'}>
         <h3 className="header__guest">{name}</h3>
         <span className="header__greet">You are invited!</span>

@@ -2,12 +2,6 @@
 // Style Component
 import './Gallery.css';
 
-// // Background Path
-// import background from '../../../assets/decorations/bgRustic1.png';
-
-// // Background Component
-// import Background from '../../background/Background';
-
 // State
 import { useState, useEffect } from 'react';
 
@@ -47,7 +41,6 @@ export default function Gallery() {
 
   return (
     <section className="section gallery">
-      {/* <Background background={background} /> */}
       <h2 className="gallery__title growScroll timeline-superfast">Our Little Happiness</h2>
       <GalleryImg currentImg={currentImg} imageThumb={imageThumb} />
       {isClose && <GallerySlider images={images} changeImage={changeImage} closeSlide={closeSlide} currentIndex={currentIndex} />}
