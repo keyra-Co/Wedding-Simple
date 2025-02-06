@@ -22,7 +22,7 @@ import { OrnamensDown, OrnamensTop } from '../../ornamen/Ornamen';
 
 export default function Info() {
   // Target date for count down
-  const targetDate = new Date('Feb 14, 2025 10:00:00').getTime();
+  const targetDate = new Date('Feb 15, 2025 10:00:00').getTime();
 
   // Reference to element that will animated
   const setRef = useAnimate();

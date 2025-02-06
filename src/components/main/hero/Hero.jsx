@@ -8,7 +8,7 @@ export default function Hero() {
         <CurvedText />
         <h1 className="hero__title">Lilianna & Mikail</h1>
       </div>
-      <p className="hero__date">14 Februari 2025</p>
+      <p className="hero__date">15 Februari 2025</p>
     </section>
   );
 }

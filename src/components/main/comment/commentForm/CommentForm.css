@@ -4,7 +4,7 @@
     gap: var(--size-lg);
 
     text-align: center;
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
 }
 
 .comment-form__info {
@@ -29,7 +29,7 @@
 }
 
 .comment-form__info-item span {
-    font-size: var(--size-xs);
+    font-size: var(--size-sm);
 }
 
 .comment-form__info-item.hadir {
@@ -77,7 +77,7 @@
 @media (min-width : 475px) {
     .comment-form__container {
         gap: var(--size-xl);
-        font-size: var(--size-base);
+        font-size: var(--size-lg);
     }
 
     .comment-form__info-item {
@@ -87,7 +87,7 @@
     }
 
     .comment-form__info-item span {
-        font-size: var(--size-sm);
+        font-size: var(--size-base);
     }
 
     .comment-form__input,
@@ -109,7 +109,7 @@
 @media (min-width : 640px) {
     .comment-form__container {
         gap: var(--size-2xl);
-        font-size: var(--size-lg);
+        font-size: var(--size-xl);
     }
 
 
@@ -120,7 +120,7 @@
     }
 
     .comment-form__info-item span {
-        font-size: var(--size-base);
+        font-size: var(--size-lg);
     }
 
     .comment-form__input,
@@ -141,7 +141,7 @@
 @media (min-width : 768px) {
     .comment-form__container {
         gap: var(--size-3xl);
-        font-size: var(--size-xl);
+        font-size: var(--size-2xl);
     }
 
     .comment-form__info-item {
@@ -151,7 +151,7 @@
     }
 
     .comment-form__info-item span {
-        font-size: var(--size-lg);
+        font-size: var(--size-xl);
     }
 
     .comment-form__input,
@@ -172,7 +172,7 @@
 @media (min-width : 1024px) {
     .comment-form__container {
         gap: var(--size-xl);
-        font-size: var(--size-base);
+        font-size: var(--size-lg);
     }
 
     .comment-form__info-item {
@@ -182,7 +182,7 @@
     }
 
     .comment-form__info-item span {
-        font-size: var(--size-sm);
+        font-size: var(--size-base);
     }
 
     .comment-form__input,

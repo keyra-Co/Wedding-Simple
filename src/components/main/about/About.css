@@ -14,7 +14,7 @@
 }
 
 .about__opening-title {
-    font-size: var(--size-2xl);
+    font-size: var(--size-3xl);
     font-family: "Dancing Script", cursive;
     text-shadow: 1px 2px 3px var(--clr-dark);
 
@@ -22,7 +22,7 @@
 }
 
 .about__opening-paragraph {
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
     text-shadow: .3px 0px .3px var(--clr-shadow);
 
     margin-top: var(--size-sm);
@@ -113,11 +113,11 @@
 @media (min-width : 475px) {
 
     .about__opening-title {
-        font-size: var(--size-3xl);
+        font-size: var(--size-4xl);
     }
 
     .about__opening-paragraph {
-        font-size: var(--size-base);
+        font-size: var(--size-lg);
         margin-top: var(--size-base);
     }
 
@@ -143,11 +143,11 @@
 @media (min-width : 640px) {
 
     .about__opening-title {
-        font-size: var(--size-4xl);
+        font-size: var(--size-5xl);
     }
 
     .about__opening-paragraph {
-        font-size: var(--size-lg);
+        font-size: var(--size-xl);
         margin-top: var(--size-lg);
     }
 
@@ -174,11 +174,11 @@
 @media (min-width : 768px) {
 
     .about__opening-title {
-        font-size: var(--size-5xl);
+        font-size: var(--size-6xl);
     }
 
     .about__opening-paragraph {
-        font-size: var(--size-xl);
+        font-size: var(--size-2xl);
         margin-top: var(--size-xl);
     }
 
@@ -203,11 +203,11 @@
 /* lg */
 @media (min-width : 1024px) {
     .about__opening-title {
-        font-size: var(--size-3xl);
+        font-size: var(--size-4xl);
     }
 
     .about__opening-paragraph {
-        font-size: var(--size-base);
+        font-size: var(--size-lg);
         margin-top: var(--size-base);
     }
 

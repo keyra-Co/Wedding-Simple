@@ -17,10 +17,19 @@
     font-size: var(--size-4xl);
     font-family: "Playfair Display", system-ui;
     text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--size-xl);
+}
+
+.ending__title span {
+    margin: -5px;
 }
 
 .ending__word {
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
     font-family: "Poppins", serif;
     text-align: center;
 
@@ -28,7 +37,7 @@
 }
 
 .ending__closer {
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
 }
 
 .ending__closing {
@@ -37,7 +46,7 @@
 }
 
 .ending__paragraph {
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
     margin-bottom: var(--size-xs);
     text-shadow: .3px 0px .3px var(--clr-shadow);
 }
@@ -50,11 +59,11 @@
     }
 
     .ending__word {
-        font-size: var(--size-base);
+        font-size: var(--size-lg);
     }
 
     .ending__closer {
-        font-size: var(--size-lg);
+        font-size: var(--size-xl);
     }
 
     .ending__closing {
@@ -62,7 +71,7 @@
     }
 
     .ending__paragraph {
-        font-size: var(--size-base);
+        font-size: var(--size-lg);
         margin-bottom: var(--size-base);
     }
 }
@@ -74,11 +83,11 @@
     }
 
     .ending__word {
-        font-size: var(--size-lg);
+        font-size: var(--size-xl);
     }
 
     .ending__closer {
-        font-size: var(--size-xl);
+        font-size: var(--size-2xl);
     }
 
     .ending__closing {
@@ -86,7 +95,7 @@
     }
 
     .ending__paragraph {
-        font-size: var(--size-base);
+        font-size: var(--size-xl);
         margin-bottom: var(--size-lg);
     }
 }
@@ -98,11 +107,11 @@
     }
 
     .ending__word {
-        font-size: var(--size-xl);
+        font-size: var(--size-2xl);
     }
 
     .ending__closer {
-        font-size: var(--size-2xl);
+        font-size: var(--size-3xl);
     }
 
     .ending__closing {
@@ -110,7 +119,7 @@
     }
 
     .ending__paragraph {
-        font-size: var(--size-lg);
+        font-size: var(--size-2xl);
         margin-bottom: var(--size-xl);
     }
 }
@@ -127,11 +136,11 @@
     }
 
     .ending__word {
-        font-size: var(--size-sm);
+        font-size: var(--size-base);
     }
 
     .ending__closer {
-        font-size: var(--size-lg);
+        font-size: var(--size-xl);
     }
 
     .ending__closing {
@@ -139,7 +148,7 @@
     }
 
     .ending__paragraph {
-        font-size: var(--size-sm);
+        font-size: var(--size-base);
         margin-bottom: var(--size-base);
     }
 }

@@ -34,7 +34,7 @@ export default function Ending() {
           Two souls become one, two hearts beat as one
         </p>
         <h2 ref={setRef} className="ending__title hiddenUp">
-          Lilianna & Mikail
+          Lilianna <span>&</span> Mikail
         </h2>
         <p ref={setRef} className="ending__closer hiddenDown">
           - Thank You -

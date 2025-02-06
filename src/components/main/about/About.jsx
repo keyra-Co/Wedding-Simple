@@ -35,7 +35,7 @@ function AboutCoupleContainer() {
   return (
     <div className="about__couple-container">
       <AboutOpening setRef={setRef} />
-      <AboutCouple name={'Lilianna Majid'} father={'Majid'} mother={'Hanih Minarnih'} pronoun={'Putri'}>
+      <AboutCouple name={'Lilianna Majid'} father={'Majid'} mother={'Nanih Minarnih'} pronoun={'Putri'}>
         <ImageFrame image={'bride.jpeg'} />
       </AboutCouple>
       <span ref={setRef} className="about__ampersand hiddenUp">

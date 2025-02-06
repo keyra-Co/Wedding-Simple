@@ -11,15 +11,16 @@
 
 .comment__title {
     font-family: "Dancing Script", "Cormorant Garamond", serif;
-    font-size: var(--size-2xl);
+    font-size: var(--size-3xl);
     text-shadow: 1px 1px 3px var(--clr-shadow);
     margin-top: var(--size-3xl);
 }
 
 .comment__paragraph {
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
     text-transform: capitalize;
     font-family: "Poppins", 'Times New Roman', Times, serif;
+    margin-bottom: var(--size-3xl);
 }
 
 .comment__container {
@@ -40,11 +41,11 @@
     }
 
     .comment__title {
-        font-size: var(--size-3xl);
+        font-size: var(--size-4xl);
     }
 
     .comment__paragraph {
-        font-size: var(--size-base);
+        font-size: var(--size-lg);
     }
 
 }
@@ -56,11 +57,11 @@
     }
 
     .comment__title {
-        font-size: var(--size-4xl);
+        font-size: var(--size-5xl);
     }
 
     .comment__paragraph {
-        font-size: var(--size-lg);
+        font-size: var(--size-xl);
     }
 
 }
@@ -72,11 +73,11 @@
     }
 
     .comment__title {
-        font-size: var(--size-5xl);
+        font-size: var(--size-6xl);
     }
 
     .comment__paragraph {
-        font-size: var(--size-xl);
+        font-size: var(--size-2xl);
     }
 }
 
@@ -87,12 +88,12 @@
     }
 
     .comment__title {
-        font-size: var(--size-3xl);
+        font-size: var(--size-4xl);
         margin-bottom: -20px;
     }
 
     .comment__paragraph {
-        font-size: var(--size-base);
+        font-size: var(--size-lg);
     }
 
 }
