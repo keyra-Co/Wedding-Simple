@@ -21,7 +21,7 @@ export default function Event() {
     <section className="section event">
       <OrnamensTop />
       {/* <Background background={background} /> */}
-      <EventDetail street={''} title={'Akad Nikah'} date={'Sabtu, 15 Februari 2025'} hour={'10.00 WIB - 11.00 WIB'} setRef={setRef}>
+      <EventDetail street={''} title={'Akad Nikah'} date={"Jum'at, 14 Februari 2025"} btn={false} setRef={setRef}>
         <svg
           className="anima hiddenDownSvg"
           ref={setRef}
@@ -77,6 +77,7 @@ S410.168,408,344,408z"
         buttonDefault={false}
         title={'Resepsi'}
         hour={'11.00 WIB - Selesai'}
+        btn={true}
         setRef={setRef}
       >
         <svg
@@ -109,7 +110,7 @@ S410.168,408,344,408z"
   );
 }
 
-function EventDetail({ children, date, title, hour, setRef, location, street }) {
+function EventDetail({ children, date, title, hour, setRef, location, street, btn }) {
   return (
     <div className="event__detail-container">
       {children}
@@ -124,7 +125,7 @@ function EventDetail({ children, date, title, hour, setRef, location, street }) 
       <p ref={setRef} className="event__location-street hiddenDown">
         {street}
       </p>
-      <BtnLocation />
+      {btn ? <BtnLocation /> : <div></div>}
     </div>
   );
 }

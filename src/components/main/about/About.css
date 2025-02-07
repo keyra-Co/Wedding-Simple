@@ -48,6 +48,12 @@
     padding: var(--size-2xl);
 }
 
+.about__couple-item span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about__couple-image-container {
     position: relative;
 

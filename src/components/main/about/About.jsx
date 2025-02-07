@@ -35,13 +35,18 @@ function AboutCoupleContainer() {
   return (
     <div className="about__couple-container">
       <AboutOpening setRef={setRef} />
-      <AboutCouple name={'Lilianna Majid'} father={'Majid'} mother={'Nanih Minarnih'} pronoun={'Putri'}>
+      <AboutCouple name={'Lilianna Majid'} father={'Majid'} mother={'Nanih Minarnih'} pronoun={'Putri Pertama'}>
         <ImageFrame image={'bride.jpeg'} />
       </AboutCouple>
       <span ref={setRef} className="about__ampersand hiddenUp">
         &
       </span>
-      <AboutCouple name={'Mikail Dharmawan'} father={'Achmad Buchori Tugiyanto (Alm)'} mother={'Endang Prapti Asih Utami (Almh)'} pronoun={'Putra'}>
+      <AboutCouple
+        name={'Mikail Dharmawan'}
+        father={'Achmad Buchori Tugiyanto (Alm).'}
+        mother={'Endang Prapti Asih Utami (Almh).'}
+        pronoun={'Putra Pertama'}
+      >
         <ImageFrame image={'groom.jpeg'} />
       </AboutCouple>
     </div>
@@ -69,7 +74,8 @@ function AboutCouple({ name, father, mother, pronoun, children }) {
       <p className="about__couple-description appearUpScroll timeline-normal">
         {pronoun} dari
         <br></br>Bapak {father}
-        <br></br>& Ibu {mother}
+        <br></br>
+        <span>&</span> Ibu {mother}
       </p>
     </div>
   );

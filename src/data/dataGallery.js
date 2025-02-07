@@ -18,7 +18,6 @@ export const imageThumb = [
   { image: 'thumbImage(16).jpeg', alt: 'image imgThumb 16' },
   { image: 'thumbImage(17).jpeg', alt: 'image imgThumb 17' },
   { image: 'thumbImage(18).jpeg', alt: 'image imgThumb 18' },
-  { image: 'thumbImage(19).jpeg', alt: 'image imgThumb 19' },
 ];
 
 export const images = [
@@ -40,5 +39,4 @@ export const images = [
   { image: 'image(16).jpeg', alt: 'image couple 16' },
   { image: 'image(17).jpeg', alt: 'image couple 17' },
   { image: 'image(18).jpeg', alt: 'image couple 18' },
-  { image: 'image(19).jpeg', alt: 'image couple 19' },
 ];
