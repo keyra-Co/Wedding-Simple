@@ -11,12 +11,6 @@ import { calculateTimeLeft } from '../../../utils/countDownTimer';
 // Animate
 import { useAnimate } from '../../../utils/observ';
 
-// // Background Path
-// import background from '../../../assets/decorations/bgRustic.png';
-
-// // Background Component
-// import Background from '../../background/Background';
-
 // Ornamens Component
 import { OrnamensDown, OrnamensTop } from '../../ornamen/Ornamen';
 
@@ -41,7 +35,6 @@ export default function Info() {
   return (
     <section className="section info">
       <OrnamensTop />
-      {/* <Background background={background} /> */}
       <div className="info__container-content">
         <InfoContent title={'Amplop Digital'} init={'gift'}>
           <p className="gift__description appearUpScroll timeline-slow">
@@ -51,7 +44,7 @@ export default function Info() {
         </InfoContent>
         <InfoContent title={'Hari yang ditunggu'} init={'countDown'}>
           <div ref={setRef} className="countDown__date-container hiddenScale">
-            {dates}
+            {dates.length === 0 ? <div className="countDown__date-end">Sudah berlangsung</div> : dates}
           </div>
         </InfoContent>
       </div>

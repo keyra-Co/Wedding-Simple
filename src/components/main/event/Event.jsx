@@ -21,7 +21,7 @@ export default function Event() {
     <section className="section event">
       <OrnamensTop />
       {/* <Background background={background} /> */}
-      <EventDetail street={''} location={'15 Februari 2025'} title={'Akad Nikah'} hour={'10.00 WIB'} setRef={setRef}>
+      <EventDetail street={''} title={'Akad Nikah'} date={'Sabtu, 15 Februari 2025'} hour={'10.00 WIB - 11.00 WIB'} setRef={setRef}>
         <svg
           className="anima hiddenDownSvg"
           ref={setRef}
@@ -71,6 +71,7 @@ S410.168,408,344,408z"
         </svg>
       </EventDetail>
       <EventDetail
+        date={'Sabtu, 15 Februari 2025'}
         location={'Aula Kantor RW 07'}
         street={'JL Matraman Dalam 3, Pegangsaan, Kec. Menteng, Kota Jakarta Pusat'}
         buttonDefault={false}

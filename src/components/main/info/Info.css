@@ -77,6 +77,21 @@
     background-color: var(--clr-highlight);
 }
 
+.countDown__date-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--size-lg);
+    padding: var(--size-xxs) var(--size-base);
+
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px var(--clr-shadow);
+    box-sizing: border-box;
+    background-color: var(--clr-highlight);
+}
+
 .countDown__time {
     font-family: "Dancing Script";
     font-weight: bold;
@@ -119,6 +134,11 @@
 
     .countDown__date-container {
         gap: var(--size-xs);
+    }
+
+    .countDown__date-end {
+        font-size: var(--size-xl);
+        padding: var(--size-xs) var(--size-lg);
     }
 
     .countDown__date {
@@ -173,6 +193,11 @@
         height: var(--size-8xl);
     }
 
+    .countDown__date-end {
+        font-size: var(--size-2xl);
+        padding: var(--size-sm) var(--size-xl);
+    }
+
     .countDown__time {
         font-size: var(--size-3xl);
     }
@@ -220,6 +245,11 @@
         height: var(--size-9xl);
     }
 
+    .countDown__date-end {
+        font-size: var(--size-3xl);
+        padding: var(--size-base) var(--size-2xl);
+    }
+
     .countDown__time {
         font-size: var(--size-4xl);
     }
@@ -265,6 +295,11 @@
     .countDown__date {
         width: var(--size-7xl);
         height: var(--size-7xl);
+    }
+
+    .countDown__date-end {
+        font-size: var(--size-lg);
+        padding: var(--size-xs) var(--size-base);
     }
 
     .countDown__time {

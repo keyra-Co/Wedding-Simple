@@ -12,12 +12,7 @@ export const calculateTimeLeft = (targetDate) => {
   };
 
   // Variable to store time in dd/hh/mm/ss format
-  let timeLeft = [
-    { time: 'selesai', name: 'Days' },
-    { time: 'selesai', name: 'Hours' },
-    { time: 'selesai', name: 'Mins' },
-    { time: 'selesai', name: 'Secs' },
-  ];
+  let timeLeft = [];
 
   if (difference > 0) {
     // Variables that will be used when the event time has finished
