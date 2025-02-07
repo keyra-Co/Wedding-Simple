@@ -74,7 +74,11 @@
     }
 
     .divider__title {
-        font-size: var(--size-2xl);
+        font-size: var(--size-xl);
+    }
+
+    .divider__scroll-title {
+        font-size: var(--size-lg);
     }
 }
 

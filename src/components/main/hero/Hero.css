@@ -9,7 +9,7 @@
     align-items: center;
 
     height: 100vh;
-    padding: var(--size-5xl) 0 var(--size-xl);
+    padding: var(--size-xl) 0 var(--size-xl);
 }
 
 
@@ -92,7 +92,7 @@
 /* lg */
 @media (min-width : 1024px) {
     .hero {
-        padding: var(--size-xxs) 0 var(--size-7xl);
+        padding: var(--size-xxs) 0 var(--size-xl);
     }
 
     .hero__title {
