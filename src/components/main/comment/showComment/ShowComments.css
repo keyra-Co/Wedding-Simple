@@ -5,22 +5,13 @@
     border-radius: 10px;
 }
 
-.show-comment__title,
-.kosong,
-.loading {
+.show-comment__title {
     text-align: center;
     font-size: var(--size-lg);
     margin-bottom: var(--size-3xl);
     padding: var(--size-base);
 
     color: var(--clr-dark);
-}
-
-.kosong,
-.loading {
-    padding: 0;
-    margin: 0;
-    font-family: "Poppins", 'Times New Roman', Times, serif;
 }
 
 .show-comment__item-container {
@@ -70,9 +61,7 @@
         padding: var(--size-2xl) var(--size-sm);
     }
 
-    .show-comment__title,
-    .kosong,
-    .loading {
+    .show-comment__title {
         font-size: var(--size-xl);
 
     }
@@ -104,9 +93,7 @@
         padding: var(--size-3xl) var(--size-base);
     }
 
-    .show-comment__title,
-    .kosong,
-    .loading {
+    .show-comment__title {
         font-size: var(--size-2xl);
 
     }
@@ -138,9 +125,7 @@
         padding: var(--size-4xl) var(--size-lg);
     }
 
-    .show-comment__title,
-    .kosong,
-    .loading {
+    .show-comment__title {
         font-size: var(--size-3xl);
 
     }
@@ -172,9 +157,7 @@
         padding: var(--size-2xl) var(--size-sm);
     }
 
-    .show-comment__title,
-    .kosong,
-    .loading {
+    .show-comment__title {
         font-size: var(--size-xl);
 
     }

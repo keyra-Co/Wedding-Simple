@@ -11,16 +11,8 @@ const formatTimestamp = (timestamp) => {
   return format(new Date(timestamp), 'dd/MM/yyyy HH:mm');
 };
 
-export default function ShowComment({ loading, error, comments }) {
+export default function ShowComment({ comments }) {
   useEffect(() => {}, [comments]); // Mengawasi perubahan pada state 'comments'
-
-  if (error) {
-    return <div>{error}</div>;
-  }
-
-  if (loading) {
-    return <div className="loading">Loading...</div>;
-  }
 
   const commentsData = comments.map((comment) => <ShowCommentItem key={comment._id} {...comment} />);
 
